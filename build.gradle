@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    /// https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
+    implementation 'org.seleniumhq.selenium:selenium-java:4.2.0'
+// https://mvnrepository.com/artifact/info.cukes/cucumber-java
+    implementation 'info.cukes:cucumber-java:1.2.6'
+// https://mvnrepository.com/artifact/info.cukes/cucumber-junit
+    testImplementation 'info.cukes:cucumber-junit:1.2.6'
+// https://mvnrepository.com/artifact/org.hamcrest/hamcrest
+    testImplementation 'org.hamcrest:hamcrest:2.2'
+    implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.18'
+}
+
+/*
+test {
+    useJUnitPlatform()
+}
+*/
