@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Segundo escenario - Manejo de selenium" tests="8" skipped="0" failures="0" errors="0" timestamp="2022-06-04T00:16:45" hostname="PETZEGA" time="5.6">
+  <properties/>
+  <testcase name="Given los siguientes parametros de entrada" classname="Scenario: Segundo escenario - Manejo de selenium" time="0.001"/>
+  <testcase name="Then debo insertar los registros en la base datos" classname="Scenario: Segundo escenario - Manejo de selenium" time="0.0"/>
+  <testcase name="Given la siguiente url &quot;https://somosmakers.co/&quot;" classname="Scenario: Segundo escenario - Manejo de selenium" time="0.0"/>
+  <testcase name="When hacemos clic en el enlace de &quot;CONTACTO&quot;" classname="Scenario: Segundo escenario - Manejo de selenium" time="0.0"/>
+  <testcase name="Then capturar el numero de celular de servicio al cliente" classname="Scenario: Segundo escenario - Manejo de selenium" time="0.0"/>
+  <testcase name="And llenar el formulario &quot;dejanos un mensaje&quot; y en el campo mensaje adjuntar el numero de celular capturado" classname="Scenario: Segundo escenario - Manejo de selenium" time="0.0"/>
+  <testcase name="And antes de hacer clic en el boton &quot;enviar mensaje&quot; tomar un pantallazo con la informacion diligenciada" classname="Scenario: Segundo escenario - Manejo de selenium" time="0.001"/>
+  <testcase name="classMethod" classname="Scenario: Segundo escenario - Manejo de selenium" time="17.418"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 24852
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+jun 03, 2022 7:16:34 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+]]></system-err>
+</testsuite>
