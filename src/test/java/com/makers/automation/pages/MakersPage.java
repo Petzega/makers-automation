@@ -101,8 +101,6 @@ public class MakersPage extends Hook {
             String path = makersPath.textAreaComentario;
             wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(path)));
             getDriver().findElement(By.xpath(path)).sendKeys(celular);
-            takeScreenShot();
-            closeDriver();
         } catch (Exception e) {
             e.printStackTrace();
             closeDriver();
@@ -111,6 +109,7 @@ public class MakersPage extends Hook {
 
     public void clickBotonEnviarMensajePage() {
         try {
+            takeScreenShot();
             String path = makersPath.btnEnviarMensaje;
             wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(path)));
             getDriver().findElement(By.xpath(path)).click();

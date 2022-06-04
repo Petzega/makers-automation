@@ -83,6 +83,6 @@ public class MakersStepDefinition {
 
     @Then("^antes de hacer clic en el boton \"([^\"]*)\" tomar un pantallazo con la informacion diligenciada$")
     public void antesDeHacerClicEnElBotonTomarUnPantallazoConLaInformacionDiligenciada(String arg1) throws Throwable {
-
+        makersStep.tomarPantallazoYEnviarFormulario();
     }
 }

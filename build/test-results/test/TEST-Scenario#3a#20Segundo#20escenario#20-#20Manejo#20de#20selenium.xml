@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Scenario: Segundo escenario - Manejo de selenium" tests="8" skipped="0" failures="0" errors="0" timestamp="2022-06-04T01:31:43" hostname="PETZEGA" time="6.352">
+<testsuite name="Scenario: Segundo escenario - Manejo de selenium" tests="8" skipped="0" failures="0" errors="0" timestamp="2022-06-04T01:35:17" hostname="PETZEGA" time="8.736">
   <properties/>
   <testcase name="Given los siguientes parametros de entrada" classname="Scenario: Segundo escenario - Manejo de selenium" time="0.0"/>
   <testcase name="Then debo insertar los registros en la base datos" classname="Scenario: Segundo escenario - Manejo de selenium" time="0.0"/>
@@ -8,7 +8,7 @@
   <testcase name="Then capturar el numero de celular de servicio al cliente" classname="Scenario: Segundo escenario - Manejo de selenium" time="0.0"/>
   <testcase name="And llenar el formulario &quot;dejanos un mensaje&quot; y en el campo mensaje adjuntar el numero de celular capturado" classname="Scenario: Segundo escenario - Manejo de selenium" time="0.0"/>
   <testcase name="And antes de hacer clic en el boton &quot;enviar mensaje&quot; tomar un pantallazo con la informacion diligenciada" classname="Scenario: Segundo escenario - Manejo de selenium" time="0.0"/>
-  <testcase name="classMethod" classname="Scenario: Segundo escenario - Manejo de selenium" time="16.534"/>
+  <testcase name="classMethod" classname="Scenario: Segundo escenario - Manejo de selenium" time="18.249"/>
   <system-out><![CDATA[
   Scenario: : Primer escenario - Calculos y cruce informacion                                            # Makers.feature:15
     Given los parametros de entrada previos                                                              # MakersStepDefinition.losParametrosDeEntradaPrevios()

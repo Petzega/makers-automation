@@ -155,4 +155,8 @@ public class MakersStep extends Hook {
         makersPage.ingresarTelefonoPage();
         makersPage.ingresarComentarioPage();
     }
+
+    public void tomarPantallazoYEnviarFormulario() {
+        makersPage.clickBotonEnviarMensajePage();
+    }
 }

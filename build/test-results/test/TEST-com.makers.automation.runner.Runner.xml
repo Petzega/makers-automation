@@ -26,12 +26,10 @@
     Then capturar el numero de celular de servicio al cliente                                                   # MakersStepDefinition.capturarElNumeroDeCelularDeServicioAlCliente()
     And llenar el formulario "dejanos un mensaje" y en el campo mensaje adjuntar el numero de celular capturado # MakersStepDefinition.llenarElFormularioYEnElCampoMensajeAdjuntarElNumeroDeCelularCapturado(String)
     And antes de hacer clic en el boton "enviar mensaje" tomar un pantallazo con la informacion diligenciada    # MakersStepDefinition.antesDeHacerClicEnElBotonTomarUnPantallazoConLaInformacionDiligenciada(String)
-Generando reporte JS
-Reporte generado
 
 2 Scenarios (2 passed)
 13 Steps (13 passed)
-0m45,532s
+0m45,836s
 
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>

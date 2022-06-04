@@ -79,14 +79,14 @@ formatter.match({
   "location": "MakersStepDefinition.losSiguientesParametrosDeEntrada(DataTable)"
 });
 formatter.result({
-  "duration": 12182294900,
+  "duration": 10894725500,
   "status": "passed"
 });
 formatter.match({
   "location": "MakersStepDefinition.deboInsertarLosRegistrosEnLaBaseDatos()"
 });
 formatter.result({
-  "duration": 1907912000,
+  "duration": 1846093100,
   "status": "passed"
 });
 formatter.scenario({
@@ -121,14 +121,14 @@ formatter.match({
   "location": "MakersStepDefinition.losParametrosDeEntradaPrevios()"
 });
 formatter.result({
-  "duration": 1853390100,
+  "duration": 1828787000,
   "status": "passed"
 });
 formatter.match({
   "location": "MakersStepDefinition.calcularElValorTotalAsiNominalPrecio()"
 });
 formatter.result({
-  "duration": 5618467600,
+  "duration": 5614276600,
   "status": "passed"
 });
 formatter.match({
@@ -145,14 +145,14 @@ formatter.match({
   "location": "MakersStepDefinition.siElPortafolioEsSeDebeCalcularElValorTotalAsiNominalPrecio(String,int)"
 });
 formatter.result({
-  "duration": 5591065800,
+  "duration": 5579766300,
   "status": "passed"
 });
 formatter.match({
   "location": "MakersStepDefinition.validarQueElValorTotalCalculadoSeaIgualAlCampoTotalDeLaBaseDeDatos()"
 });
 formatter.result({
-  "duration": 1858086700,
+  "duration": 1846197200,
   "status": "passed"
 });
 formatter.background({
@@ -228,14 +228,14 @@ formatter.match({
   "location": "MakersStepDefinition.losSiguientesParametrosDeEntrada(DataTable)"
 });
 formatter.result({
-  "duration": 10174382200,
+  "duration": 9504313300,
   "status": "passed"
 });
 formatter.match({
   "location": "MakersStepDefinition.deboInsertarLosRegistrosEnLaBaseDatos()"
 });
 formatter.result({
-  "duration": 1864917800,
+  "duration": 1846110400,
   "status": "passed"
 });
 formatter.scenario({
@@ -281,7 +281,7 @@ formatter.match({
   "location": "MakersStepDefinition.laSiguienteUrl(String)"
 });
 formatter.result({
-  "duration": 2252638800,
+  "duration": 3831335100,
   "status": "passed"
 });
 formatter.match({
@@ -294,14 +294,14 @@ formatter.match({
   "location": "MakersStepDefinition.hacemosClicEnElEnlaceDe(String)"
 });
 formatter.result({
-  "duration": 1492726800,
+  "duration": 1420327900,
   "status": "passed"
 });
 formatter.match({
   "location": "MakersStepDefinition.capturarElNumeroDeCelularDeServicioAlCliente()"
 });
 formatter.result({
-  "duration": 31523300,
+  "duration": 57972900,
   "status": "passed"
 });
 formatter.match({
@@ -314,7 +314,7 @@ formatter.match({
   "location": "MakersStepDefinition.llenarElFormularioYEnElCampoMensajeAdjuntarElNumeroDeCelularCapturado(String)"
 });
 formatter.result({
-  "duration": 704563700,
+  "duration": 1566439600,
   "status": "passed"
 });
 formatter.match({
@@ -327,7 +327,7 @@ formatter.match({
   "location": "MakersStepDefinition.antesDeHacerClicEnElBotonTomarUnPantallazoConLaInformacionDiligenciada(String)"
 });
 formatter.result({
-  "duration": 82200,
+  "duration": 56800,
   "status": "passed"
 });
 });

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Scenario: : Primer escenario - Calculos y cruce informacion" tests="7" skipped="0" failures="0" errors="0" timestamp="2022-06-04T01:31:16" hostname="PETZEGA" time="16.854">
+<testsuite name="Scenario: : Primer escenario - Calculos y cruce informacion" tests="7" skipped="0" failures="0" errors="0" timestamp="2022-06-04T01:34:51" hostname="PETZEGA" time="16.735">
   <properties/>
   <testcase name="Given los siguientes parametros de entrada" classname="Scenario: : Primer escenario - Calculos y cruce informacion" time="0.001"/>
   <testcase name="Then debo insertar los registros en la base datos" classname="Scenario: : Primer escenario - Calculos y cruce informacion" time="0.0"/>
@@ -7,13 +7,13 @@
   <testcase name="Then calcular el valor total asi [nominal * precio]" classname="Scenario: : Primer escenario - Calculos y cruce informacion" time="0.0"/>
   <testcase name="But si el portafolio es &quot;OBL-RIESGO&quot; se debe calcular el valor total asi [(nominal * precio) + 2000]" classname="Scenario: : Primer escenario - Calculos y cruce informacion" time="0.0"/>
   <testcase name="And validar que el valor total calculado sea igual al campo total de la base de datos" classname="Scenario: : Primer escenario - Calculos y cruce informacion" time="0.0"/>
-  <testcase name="classMethod" classname="Scenario: : Primer escenario - Calculos y cruce informacion" time="29.041"/>
+  <testcase name="classMethod" classname="Scenario: : Primer escenario - Calculos y cruce informacion" time="27.635"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 28393
+  <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 12694
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-jun 03, 2022 8:31:05 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+jun 03, 2022 8:34:42 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
 ]]></system-err>
 </testsuite>
