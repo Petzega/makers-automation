@@ -12,11 +12,11 @@ Feature: Prueba técnica – Automatización
       | 15/05/2020 | OBL-RIESGO | 123000 | 1.29 | 160670 |
     Then debo insertar los registros en la base datos
 
-#  Scenario: : Primer escenario - Calculos y cruce informacion
-#    Given los parametros de entrada previos
-#    Then calcular el valor total asi [nominal * precio]
-#    But si el portafolio es "OBL-RIESGO" se debe calcular el valor total asi [(nominal * precio) + 2000]
-#    And validar que el valor total calculado sea igual al campo total de la base de datos
+  Scenario: : Primer escenario - Calculos y cruce informacion
+    Given los parametros de entrada previos
+    Then calcular el valor total asi [nominal * precio]
+    But si el portafolio es "OBL-RIESGO" se debe calcular el valor total asi [(nominal * precio) + 2000]
+    And validar que el valor total calculado sea igual al campo total de la base de datos
 
   Scenario: Segundo escenario - Manejo de selenium
     Given la siguiente url "https://somosmakers.co/"

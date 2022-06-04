@@ -68,20 +68,21 @@ public class MakersStepDefinition {
 
     @When("^hacemos clic en el enlace de \"([^\"]*)\"$")
     public void hacemosClicEnElEnlaceDe(String data) throws Throwable {
-
+        makersStep.clickBotonContacto(data);
     }
 
     @Then("^capturar el numero de celular de servicio al cliente$")
     public void capturarElNumeroDeCelularDeServicioAlCliente() throws Throwable {
-
+        makersStep.obtenerCelularContacto();
     }
 
     @Then("^llenar el formulario \"([^\"]*)\" y en el campo mensaje adjuntar el numero de celular capturado$")
     public void llenarElFormularioYEnElCampoMensajeAdjuntarElNumeroDeCelularCapturado(String arg1) throws Throwable {
-
+        makersStep.completarFormulario();
     }
 
     @Then("^antes de hacer clic en el boton \"([^\"]*)\" tomar un pantallazo con la informacion diligenciada$")
     public void antesDeHacerClicEnElBotonTomarUnPantallazoConLaInformacionDiligenciada(String arg1) throws Throwable {
+
     }
 }

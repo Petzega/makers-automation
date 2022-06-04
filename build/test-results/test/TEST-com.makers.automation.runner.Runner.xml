@@ -9,22 +9,29 @@
   Background: Definir los parametros previos          # Makers.feature:6
     Given los siguientes parametros de entrada        # MakersStepDefinition.losSiguientesParametrosDeEntrada(DataTable)
     Then debo insertar los registros en la base datos # MakersStepDefinition.deboInsertarLosRegistrosEnLaBaseDatos()
+====================
+?[33mID| 	PORTAFOLIO| 	NOMINAL| 	CALCULO| 	VALIDACION ?[0m
+?[32m1 | 	 OBL-MODER| 	2908950,00| 	2908950,00| 	 true?[0m
+?[32m2 | 	 OBL-MODER| 	250000,00| 	250000,00| 	 true?[0m
+?[32m3 | 	 OBL-RIESGO| 	-13023267,00| 	-13023267,40| 	 false?[0m
+?[32m4 | 	 OBL-RIESGO| 	160670,00| 	160670,00| 	 true?[0m
 
-  #  Scenario: : Primer escenario - Calculos y cruce informacion
-  #    Given los parametros de entrada previos
-  #    Then calcular el valor total asi [nominal * precio]
-  #    But si el portafolio es "OBL-RIESGO" se debe calcular el valor total asi [(nominal * precio) + 2000]
-  #    And validar que el valor total calculado sea igual al campo total de la base de datos
+  Background: Definir los parametros previos          # Makers.feature:6
+    Given los siguientes parametros de entrada        # MakersStepDefinition.losSiguientesParametrosDeEntrada(DataTable)
+    Then debo insertar los registros en la base datos # MakersStepDefinition.deboInsertarLosRegistrosEnLaBaseDatos()
+
   Scenario: Segundo escenario - Manejo de selenium                                                              # Makers.feature:21
     Given la siguiente url "https://somosmakers.co/"                                                            # MakersStepDefinition.laSiguienteUrl(String)
     When hacemos clic en el enlace de "CONTACTO"                                                                # MakersStepDefinition.hacemosClicEnElEnlaceDe(String)
     Then capturar el numero de celular de servicio al cliente                                                   # MakersStepDefinition.capturarElNumeroDeCelularDeServicioAlCliente()
     And llenar el formulario "dejanos un mensaje" y en el campo mensaje adjuntar el numero de celular capturado # MakersStepDefinition.llenarElFormularioYEnElCampoMensajeAdjuntarElNumeroDeCelularCapturado(String)
     And antes de hacer clic en el boton "enviar mensaje" tomar un pantallazo con la informacion diligenciada    # MakersStepDefinition.antesDeHacerClicEnElBotonTomarUnPantallazoConLaInformacionDiligenciada(String)
+Generando reporte JS
+Reporte generado
 
-1 Scenarios (1 passed)
-7 Steps (7 passed)
-0m17,404s
+2 Scenarios (2 passed)
+13 Steps (13 passed)
+0m45,532s
 
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>

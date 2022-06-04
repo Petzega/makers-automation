@@ -1,10 +1,13 @@
 package com.makers.automation.helpers;
 
-import cucumber.api.java.After;
-import org.openqa.selenium.WebDriver;
+import org.junit.After;
+import org.junit.AfterClass;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.apache.commons.io.FileUtils;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Paths;
 import java.sql.Connection;
@@ -52,9 +55,37 @@ public class Hook {
         }
         return driver;
     }
-    @After
+
     public void closeDriver() {
         getDriver().close();
         getDriver().quit();
+    }
+
+    public void scrollIntoView(WebElement element) {
+        JavascriptExecutor js = (JavascriptExecutor) getDriver();
+        js.executeScript("arguments[0].scrollIntoView();", element);
+    }
+
+    public void takeScreenShot() {
+        try {
+            TakesScreenshot scrShot =((TakesScreenshot) getDriver());
+            File source = scrShot.getScreenshotAs(OutputType.FILE);
+            File route = new File("img/image.jpeg");
+            FileUtils.copyFile(source, route);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public boolean validarExistenciaElemento(String element) {
+        boolean validator = false;
+        try {
+            if (driver.findElements( By.xpath(element) ).size() != 0) {
+                validator = true;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return validator;
     }
 }

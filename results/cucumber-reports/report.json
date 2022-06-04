@@ -1,0 +1,344 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 6,
+        "name": "Definir los parametros previos",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 12182294900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "los siguientes parametros de entrada",
+            "match": {
+              "location": "MakersStepDefinition.losSiguientesParametrosDeEntrada(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "fecha",
+                  "portafolio",
+                  "nominal",
+                  "precio",
+                  "total"
+                ],
+                "line": 8
+              },
+              {
+                "cells": [
+                  "15/05/2020",
+                  "OBL-MODER",
+                  "123000",
+                  "23.65",
+                  "2908950"
+                ],
+                "line": 9
+              },
+              {
+                "cells": [
+                  "15/05/2020",
+                  "OBL-MODER",
+                  "10000",
+                  "25.00",
+                  "250000"
+                ],
+                "line": 10
+              },
+              {
+                "cells": [
+                  "15/05/2020",
+                  "OBL-RIESGO",
+                  "1276987",
+                  "-10.20",
+                  "-13023267"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "15/05/2020",
+                  "OBL-RIESGO",
+                  "123000",
+                  "1.29",
+                  "160670"
+                ],
+                "line": 12
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1907912000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "debo insertar los registros en la base datos",
+            "match": {
+              "location": "MakersStepDefinition.deboInsertarLosRegistrosEnLaBaseDatos()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": ": Primer escenario - Calculos y cruce informacion",
+        "description": "",
+        "id": "prueba-técnica-–-automatización;:-primer-escenario---calculos-y-cruce-informacion",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1853390100,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "los parametros de entrada previos",
+            "match": {
+              "location": "MakersStepDefinition.losParametrosDeEntradaPrevios()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5618467600,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "calcular el valor total asi [nominal * precio]",
+            "match": {
+              "location": "MakersStepDefinition.calcularElValorTotalAsiNominalPrecio()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5591065800,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "si el portafolio es \"OBL-RIESGO\" se debe calcular el valor total asi [(nominal * precio) + 2000]",
+            "match": {
+              "arguments": [
+                {
+                  "val": "OBL-RIESGO",
+                  "offset": 21
+                },
+                {
+                  "val": "2000",
+                  "offset": 91
+                }
+              ],
+              "location": "MakersStepDefinition.siElPortafolioEsSeDebeCalcularElValorTotalAsiNominalPrecio(String,int)"
+            },
+            "keyword": "But "
+          },
+          {
+            "result": {
+              "duration": 1858086700,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "validar que el valor total calculado sea igual al campo total de la base de datos",
+            "match": {
+              "location": "MakersStepDefinition.validarQueElValorTotalCalculadoSeaIgualAlCampoTotalDeLaBaseDeDatos()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "Definir los parametros previos",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 10174382200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "los siguientes parametros de entrada",
+            "match": {
+              "location": "MakersStepDefinition.losSiguientesParametrosDeEntrada(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "fecha",
+                  "portafolio",
+                  "nominal",
+                  "precio",
+                  "total"
+                ],
+                "line": 8
+              },
+              {
+                "cells": [
+                  "15/05/2020",
+                  "OBL-MODER",
+                  "123000",
+                  "23.65",
+                  "2908950"
+                ],
+                "line": 9
+              },
+              {
+                "cells": [
+                  "15/05/2020",
+                  "OBL-MODER",
+                  "10000",
+                  "25.00",
+                  "250000"
+                ],
+                "line": 10
+              },
+              {
+                "cells": [
+                  "15/05/2020",
+                  "OBL-RIESGO",
+                  "1276987",
+                  "-10.20",
+                  "-13023267"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "15/05/2020",
+                  "OBL-RIESGO",
+                  "123000",
+                  "1.29",
+                  "160670"
+                ],
+                "line": 12
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1864917800,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "debo insertar los registros en la base datos",
+            "match": {
+              "location": "MakersStepDefinition.deboInsertarLosRegistrosEnLaBaseDatos()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 21,
+        "name": "Segundo escenario - Manejo de selenium",
+        "description": "",
+        "id": "prueba-técnica-–-automatización;segundo-escenario---manejo-de-selenium",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2252638800,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "la siguiente url \"https://somosmakers.co/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://somosmakers.co/",
+                  "offset": 18
+                }
+              ],
+              "location": "MakersStepDefinition.laSiguienteUrl(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1492726800,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "hacemos clic en el enlace de \"CONTACTO\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "CONTACTO",
+                  "offset": 30
+                }
+              ],
+              "location": "MakersStepDefinition.hacemosClicEnElEnlaceDe(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 31523300,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "capturar el numero de celular de servicio al cliente",
+            "match": {
+              "location": "MakersStepDefinition.capturarElNumeroDeCelularDeServicioAlCliente()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 704563700,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "llenar el formulario \"dejanos un mensaje\" y en el campo mensaje adjuntar el numero de celular capturado",
+            "match": {
+              "arguments": [
+                {
+                  "val": "dejanos un mensaje",
+                  "offset": 22
+                }
+              ],
+              "location": "MakersStepDefinition.llenarElFormularioYEnElCampoMensajeAdjuntarElNumeroDeCelularCapturado(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 82200,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "antes de hacer clic en el boton \"enviar mensaje\" tomar un pantallazo con la informacion diligenciada",
+            "match": {
+              "arguments": [
+                {
+                  "val": "enviar mensaje",
+                  "offset": 33
+                }
+              ],
+              "location": "MakersStepDefinition.antesDeHacerClicEnElBotonTomarUnPantallazoConLaInformacionDiligenciada(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Prueba técnica – Automatización",
+    "description": "La característica consta de dos escenarios para automatizar, el primero consta de 4 registros que se deben\r\nalmacenar en una base de datos para posteriormente hacer los calculos y cruzar con la información almacenada.\r\nEl segundo escenario consta de un enunciado donde debera acceder a una pagina web y llenar un formulario de contactenos.",
+    "id": "prueba-técnica-–-automatización",
+    "keyword": "Feature",
+    "uri": "Makers.feature"
+  }
+]

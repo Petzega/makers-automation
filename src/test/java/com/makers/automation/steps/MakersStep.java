@@ -138,6 +138,21 @@ public class MakersStep extends Hook {
 
     public void logIntoSomosMakers(String URL) {
         makersPage.logIntoPage(URL);
-        makersPage.clickBotonContactoPage("CONTACTO");
+    }
+
+    public void clickBotonContacto(String data) {
+        makersPage.clickBotonContactoPage(data);
+    }
+
+    public void obtenerCelularContacto() {
+        makersPage.getCelularContactoPage();
+    }
+
+    public void completarFormulario() {
+        makersPage.ingresarNombrePage();
+        makersPage.ingresarApellidoPage();
+        makersPage.ingresarEmailPage();
+        makersPage.ingresarTelefonoPage();
+        makersPage.ingresarComentarioPage();
     }
 }
